@@ -1,44 +1,48 @@
-div {
-    text-align: center;
-    height: 500px;
+.container {
+  text-align: center;
+  height: 500px;
 }
 
 .header-div {
-    background-image: url("images/Coding.jpg");
+  background-image: url("images/Coding.jpg");
 }
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
 
 .navbar {
-    overflow: hidden;
-    background-color: blue;
-    height: 40px;
-    margin-left: 202px;
+  overflow: hidden;
+  background-color: blue;
+  height: 40px;
+  margin-left: 202px;
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 
 .fa {
-    color: yellow;
-    background-color: black;
-    font-size: 50px;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-  }
+  color: yellow;
+  background-color: black;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card {
+  height: 200px;
+}
