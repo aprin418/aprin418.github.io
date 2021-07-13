@@ -1,10 +1,14 @@
-.container {
+body {
+  color: #f9a22d;
+  background-color: #266ba1;
+}
+
+div {
   text-align: center;
-  height: 500px;
 }
 
 .header-div {
-  background-image: url("images/Coding.jpg");
+  background-image: url("images/coding2.jpg");
 }
 
 img {
@@ -14,35 +18,51 @@ img {
   width: 150px;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: blue;
-  height: 40px;
-  margin-left: 202px;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
 .fa {
-  color: yellow;
-  background-color: black;
+  color: #173f5f;
+  background-color: #ffca83;
   font-size: 50px;
   width: 100px;
   text-align: center;
   text-decoration: none;
 }
 
+/* .about-div {
+  background-color: #267158;
+}
+
+.skills-div {
+  background-color: #71aa97;
+}
+
+.deployed-div {
+  background-color: #478d76;
+}
+
+.other-div {
+  background-color: #0e553e;
+}
+
+.contact-div {
+  background-color: #003926;
+} */
+
 .card {
-  height: 200px;
+  height: 400px;
+}
+
+div {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.jumbotron {
+  background-image: url("images/coding3.gif");
+  background-size: cover;
+}
+
+.card {
+  background-color: #88c8f9;
 }

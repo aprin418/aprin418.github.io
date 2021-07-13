@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link
@@ -15,28 +21,44 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="container navbar sticky" id="navbar">
-      <div class="row">
-        <div>
-          <a href="#header-div">Home</a>
-          <a href="#about-div">About Me</a>
-          <a href="#skills-div">Skills</a>
-          <a href="#deployed-div">Projects</a>
-          <a href="#contact-div">Contact</a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Aaron Prince</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#header-div"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#about-div">About Me</a>
+          <a class="nav-item nav-link" href="#skills-div">Skills</a>
+          <a class="nav-item nav-link" href="#deployed-div">My Projects</a>
+          <a class="nav-item nav-link" href="#contact-div">Contact Me</a>
         </div>
       </div>
-    </div>
-    <div class="container header-div" id="header-div">
-      <div class="row">
-        <div>
-          <h1>Aaron Prince</h1>
-        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Aaron Prince</h1>
+        <p class="lead">Software Engineer.</p>
       </div>
     </div>
-    <div class="container about-div main-div" id="about-div">
-      <div>
-        <div>
+
+    <div class="container-fluid about-div" id="about-div">
+      <div class="row mb-0">
+        <div class="col">
           <h1>About Me</h1>
           <img
             src="images/Aaron Pic.jpg"
@@ -56,9 +78,10 @@
         </div>
       </div>
     </div>
-    <div class="container skills-div" id="skills-div">
-      <div class="row">
-        <h1>Skills</h1>
+
+    <div class="container-fluid skills-div" id="skills-div">
+      <h1>Skills</h1>
+      <div class="row mb-0">
         <div class="col s4">
           <h4>Front-End</h4>
           <ul>
@@ -95,96 +118,206 @@
         </div>
       </div>
     </div>
-    <div class="container deployed-div" id="deployed-div">
-      <div class="row">
-        <h1>Deployed Projects</h1>
+
+    <div class="container-fluid deployed-div" id="deployed-div">
+      <h1>Deployed Projects</h1>
+      <div class="row mb-0">
         <div>
           <div class="col s4">
-            <a href="https://lnkd.in/gaRJG65">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/PacManIntro.png" alt="pacman picture" />
-                  <span class="card-title">JavaScript Pacman</span>
-                </div>
-                <div class="card-content">
-                  <p>JavaScript Pacman</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/Pacman.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Pacman</span
+                >
+                <p><a href="https://lnkd.in/gaRJG65">Check it out!</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Pacman<i class="material-icons right">close</i></span
+                >
+                <p>Pacman, built with basic HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
           </div>
           <div class="col s4">
-            <a href="https://liquor-list.herokuapp.com/">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>Liquor List</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/Search.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Liquor-List</span
+                >
+                <p>
+                  <a href="https://liquor-list.herokuapp.com/">Check it out!</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Liquor-List<i class="material-icons right">close</i></span
+                >
+                <p>
+                  Liquor-list site. Search site designed to search for cocktails
+                  based on your ingredients lying around the house. Designed
+                  with Node, Express EJS, SQL, Postgres, Mongoose, JavaScript
+                  and CSS
+                </p>
+              </div>
+            </div>
           </div>
           <div class="col s4">
-            <a href="https://bird-flow.herokuapp.com/">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>Group project Bird-Flow</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/cardinal.jpg" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Bird-Flow</span
+                >
+                <p>
+                  <a href="https://bird-flow.herokuapp.com/">Check it out!</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Bird-Flow<i class="material-icons right">close</i></span
+                >
+                <p>
+                  Bird-Flow, group project to search and display birds within a
+                  desired area. Designed with React, MongoDB, Express, Node,
+                  JavaScript and CSS
+                </p>
+              </div>
+            </div>
           </div>
           <div class="col s4">
-            <a href="https://wow-gt.herokuapp.com/">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>WOW Gear Tracker</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/gear-page.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >WOW-GT</span
+                >
+                <p><a href="https://wow-gt.herokuapp.com/">Check it out!</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >WOW-GT<i class="material-icons right">close</i></span
+                >
+                <p>
+                  World of Warcraft classic gear tracker, created to allow a
+                  user to add and display at a glance the gear they still want
+                  to collect within WOW classic. Designed with Django, Python,
+                  SQL and Materialze.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container other-div">
-      <div class="row">
+
+    <div class="container-fluid other-div" id="other-div">
+      <h1>Other Projects</h1>
+      <div class="row mb-0">
         <div>
-          <h1>Other Projects</h1>
           <div class="col s4">
-            <a href="https://github.com/aprin418/ReactNativeNucamp">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>React-Native project completed with NuCamp</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/bootstrap.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Nucamp Site-Boostrap</span
+                >
+                <p>
+                  <a href="https://github.com/aprin418/nucampsite"
+                    >Check it out!</a
+                  >
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Nucamp Site-Boostrap<i class="material-icons right"
+                    >close</i
+                  ></span
+                >
+                <p>Nucamp project, Learning and using bootstrap features.</p>
+              </div>
+            </div>
           </div>
           <div class="col s4">
-            <a href="https://github.com/aprin418/ReactNucamp">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>React project completed with NuCamp</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/react.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Nucamp Site-React</span
+                >
+                <p>
+                  <a href="https://github.com/aprin418/ReactNucamp"
+                    >Check it out!</a
+                  >
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Nucamp Site-React<i class="material-icons right"
+                    >close</i
+                  ></span
+                >
+                <p>Nucamp Site, Explaining the many uses for React.</p>
+              </div>
+            </div>
           </div>
           <div class="col s4">
-            <a href="https://github.com/aprin418/nucampsite">
-              <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                  <p>NuCamp project for Bootstrap</p>
-                </div>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/react-native.png" />
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"
+                  >Nucamp Site-React Native</span
+                >
+                <p>
+                  <a href="https://github.com/aprin418/ReactNativeNucamp"
+                    >Check it out!</a
+                  >
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Nucamp Site-React Native<i class="material-icons right"
+                    >close</i
+                  ></span
+                >
+                <p>
+                  Nucamp Site, a project to turn the normal React site into a
+                  React Native Mobile site using Expo-go app.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container contact-div" id="contact-div">
-      <div class="row">
-        <div>
-          <h1>Contact Info</h1>
+
+    <div class="container-fluid contact-div" id="contact-div">
+      <h1>Contact Info</h1>
+      <div class="row mb-0">
+        <div class="col">
           <a href="#" class="fa fa-github"></a>
           <a href="#" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-envelope"></a>
         </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
