@@ -7,6 +7,10 @@ div {
   text-align: center;
 }
 
+h1 {
+  text-shadow: 3px 3px #266ba1;
+}
+
 .navbar {
   background-color: #ffca83;
 }
