@@ -9,13 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link
       rel="stylesheet"
@@ -26,7 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
-    <title>Document</title>
+    <title>Aaron Prince</title>
   </head>
 
   <body>
@@ -45,13 +41,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#header-div"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link" href="#about-div">About Me</a>
-          <a class="nav-item nav-link" href="#skills-div">Skills</a>
-          <a class="nav-item nav-link" href="#deployed-div">My Projects</a>
-          <a class="nav-item nav-link" href="#contact-div">Contact Me</a>
+          <a class="nav-link" href="#about-div">About Me</a>
+          <a class="nav-link" href="#skills-div">Skills</a>
+          <a class="nav-link" href="#deployed-div">My Projects</a>
+          <a class="nav-link" href="#contact-div">Contact Me</a>
         </div>
       </div>
     </nav>
@@ -68,7 +61,7 @@
         <div class="col">
           <h2>About Me</h2>
           <img
-            src="images/Aaron Pic.jpg"
+            src="images/Aaron-Black-and-White.jpg"
             alt="Profile picture of Aaron Prince"
           />
           <p>
@@ -91,7 +84,7 @@
       <div class="row mb-0">
         <div class="col s4">
           <h4>Front-End</h4>
-          <ul>
+          <ul class="no-bullets">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -104,7 +97,7 @@
         </div>
         <div class="col s4">
           <h4>Back-End</h4>
-          <ul>
+          <ul class="no-bullets">
             <li>NodeJS</li>
             <li>Express</li>
             <li>SQL</li>
@@ -115,7 +108,7 @@
         </div>
         <div class="col s4">
           <h4>Other</h4>
-          <ul>
+          <ul class="no-bullets">
             <li>Github</li>
             <li>Git</li>
             <li>Slack</li>
@@ -126,113 +119,168 @@
       </div>
     </div>
 
-    <div class="container-fluid deployed-div" id="deployed-div">
+    <div class="container deployed-div" id="deployed-div">
       <h2>Deployed Projects</h2>
-      <div class="row mb-0">
-        <div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/Pacman.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Pacman</span
-                >
-                <p><a href="https://lnkd.in/gaRJG65">Check it out!</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Pacman<i class="material-icons right">close</i></span
-                >
-                <p>Pacman, built with basic HTML, CSS, and JavaScript.</p>
-              </div>
+      <div class="row">
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/LLSearch.png"
+              class="card-img-top"
+              alt="Liquor list site search image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Liquor-list site. Search site designed to search for cocktails
+                based on your ingredients lying around the house. Designed with
+                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
+              </p>
             </div>
+            <a
+              href="https://liquor-list.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check it out!</a
+            >
           </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/Search.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Liquor-List</span
-                >
-                <p>
-                  <a href="https://liquor-list.herokuapp.com/">Check it out!</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Liquor-List<i class="material-icons right">close</i></span
-                >
-                <p>
-                  Liquor-list site. Search site designed to search for cocktails
-                  based on your ingredients lying around the house. Designed
-                  with Node, Express EJS, SQL, Postgres, Mongoose, JavaScript
-                  and CSS
-                </p>
-              </div>
+        </div>
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/gear-page.png"
+              class="card-img-top"
+              alt="Wow Gear tracker details image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                World of Warcraft classic gear tracker, created to allow a user
+                to add and display at a glance the gear they want to collect
+                within WOW classic. Built with Django, Python, SQL and
+                Materialze.
+              </p>
             </div>
+            <a
+              href="https://wow-gt.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check it out!</a
+            >
           </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/cardinal.jpg" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Bird-Flow</span
-                >
-                <p>
-                  <a href="https://bird-flow.herokuapp.com/">Check it out!</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Bird-Flow<i class="material-icons right">close</i></span
-                >
-                <p>
-                  Bird-Flow, group project to search and display birds within a
-                  desired area. Designed with React, MongoDB, Express, Node,
-                  JavaScript and CSS
-                </p>
-              </div>
+        </div>
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/cardinal.jpg"
+              class="card-img-top"
+              alt="Picture of a cardinal"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Bird-Flow, group project to search and display birds within a
+                desired area. Designed with React, MongoDB, Express, Node,
+                JavaScript and CSS
+              </p>
             </div>
+            <a
+              href="https://bird-flow.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check it out!</a
+            >
           </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/gear-page.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >WOW-GT</span
-                >
-                <p><a href="https://wow-gt.herokuapp.com/">Check it out!</a></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >WOW-GT<i class="material-icons right">close</i></span
-                >
-                <p>
-                  World of Warcraft classic gear tracker, created to allow a
-                  user to add and display at a glance the gear they still want
-                  to collect within WOW classic. Designed with Django, Python,
-                  SQL and Materialze.
-                </p>
-              </div>
+        </div>
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/Pacman.png"
+              class="card-img-top"
+              alt="Pacman start screen"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                A one for one square by square recreation of level one of
+                Pacman, built with basic HTML, CSS, and JavaScript.
+              </p>
             </div>
+            <a href="https://lnkd.in/gaRJG65" target="blank" class="card-link"
+              >Check it out!</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid other-div" id="other-div">
+    <!-- <div class="container-fluid other-div" id="other-div">
       <h2>Other Projects</h2>
-      <div class="row mb-0">
-        <div>
-          <div class="col s4">
+      <div class="row">
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/bootstrap.png"
+              class="card-img-top"
+              alt="Liquor list site search image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Liquor-list site. Search site designed to search for cocktails
+                based on your ingredients lying around the house. Designed with
+                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
+              </p>
+            </div>
+            <a
+              href="https://liquor-list.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check out my github page</a
+            >
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/react.png"
+              class="card-img-top"
+              alt="Liquor list site search image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Liquor-list site. Search site designed to search for cocktails
+                based on your ingredients lying around the house. Designed with
+                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
+              </p>
+            </div>
+            <a
+              href="https://liquor-list.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check out my github page</a
+            >
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/LLSearch.png"
+              class="card-img-top"
+              alt="Liquor list site search image"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Liquor-list site. Search site designed to search for cocktails
+                based on your ingredients lying around the house. Designed with
+                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
+              </p>
+            </div>
+            <a
+              href="https://liquor-list.herokuapp.com/"
+              target="blank"
+              class="card-link"
+              >Check out my github page</a
+            >
+          </div>
+        </div> -->
+
+    <!-- <div class="col s4">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="images/bootstrap.png" />
@@ -309,10 +357,9 @@
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> -->
+    <!-- </div>
+    </div> -->
 
     <div class="container-fluid contact-div" id="contact-div">
       <h2>Contact Info</h2>
@@ -328,16 +375,19 @@
       </div>
     </div>
 
+    <footer>
+      <h6>Created by Aaron Prince, 2021</h6>
+    </footer>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>

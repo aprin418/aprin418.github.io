@@ -1,76 +1,50 @@
 body {
-  color: #f9a22d;
-  background-color: #266ba1;
+  color: #e9e9e9;
+  background-color: #2d2d2d;
 }
 
 div {
   text-align: center;
 }
 
-h1 {
-  text-shadow: 3px 3px #266ba1;
-}
-
 .navbar {
-  background-color: #ffca83;
-}
-
-.header-div {
-  background-image: url("images/coding2.jpg");
+  background-color: #e6e6e6;
 }
 
 img {
-  border: 1px solid #ddd;
+  border: 1px solid #e9e9e9;
   border-radius: 4px;
   padding: 5px;
   width: 250px;
 }
 
 .fa {
-  color: #173f5f;
-  background-color: #ffca83;
+  background-color: #545454;
   font-size: 50px;
   width: 100px;
   text-align: center;
   text-decoration: none;
 }
 
-/* .about-div {
-  background-color: #267158;
-}
-
-.skills-div {
-  background-color: #71aa97;
-}
-
-.deployed-div {
-  background-color: #478d76;
-}
-
-.other-div {
-  background-color: #0e553e;
-}
-
-.contact-div {
-  background-color: #003926;
-} */
-
 .card {
-  height: 400px;
-}
-
-div {
-  margin-bottom: 0 !important;
-  padding-bottom: 0;
-  padding-top: 0;
-  margin-top: 0;
+  height: 25rem;
+  background-color: #545454;
 }
 
 .jumbotron {
-  background-image: url("images/coding3.gif");
-  background-size: cover;
+  background-color: #2d2d2d;
 }
 
-.card {
-  background-color: #88c8f9;
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h6 {
+  text-align: center;
+}
+
+.nav-link {
+  color: black !important;
 }
