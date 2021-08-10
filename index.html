@@ -57,13 +57,17 @@
     </div>
 
     <div class="container about-div" id="about-div">
+      <h2>About Me</h2>
+      <br />
       <div class="row">
-        <div class="col">
-          <h2>About Me</h2>
+        <div class="col col-sm-6">
           <img
+            class="bioImg"
             src="images/Aaron-Black-and-White.jpg"
             alt="Profile picture of Aaron Prince"
           />
+        </div>
+        <div class="bio col col-sm-6">
           <p>
             I am a software engineer with a history of problem solving, teamwork
             and leadership. I value independence, responsibility and success. I
@@ -79,8 +83,11 @@
       </div>
     </div>
 
+    <br />
+
     <div class="container-fluid skills-div" id="skills-div">
       <h2>Skills</h2>
+      <br />
       <div class="row mb-0">
         <div class="col s4">
           <h4>Front-End</h4>
@@ -119,274 +126,169 @@
       </div>
     </div>
 
+    <br />
+
     <div class="container deployed-div" id="deployed-div">
       <h2>Deployed Projects</h2>
+      <br />
       <div class="row">
         <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/LLSearch.png"
-              class="card-img-top"
-              alt="Liquor list site search image"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Liquor-list site. Search site designed to search for cocktails
-                based on your ingredients lying around the house. Designed with
-                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
-              </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="images/LLSearch.png"
+                  class="card-img-top"
+                  alt="Liquor list site search image"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Liquor List</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    Liquor-list site. Search site designed to search for
+                    cocktails based on your ingredients lying around the house.
+                    Designed with Node, Express EJS, SQL, Postgres, JavaScript
+                    and CSS.
+                  </p>
+                  <a
+                    href="https://liquor-list.herokuapp.com/"
+                    target="blank"
+                    class="card-link"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
             </div>
-            <a
-              href="https://liquor-list.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check it out!</a
-            >
           </div>
         </div>
         <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/gear-page.png"
-              class="card-img-top"
-              alt="Wow Gear tracker details image"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                World of Warcraft classic gear tracker, created to allow a user
-                to add and display at a glance the gear they want to collect
-                within WOW classic. Built with Django, Python, SQL and
-                Materialze.
-              </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="images/gear-page.png"
+                  class="card-img-top"
+                  alt="Wow Gear tracker details image"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>WOW-GT</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    World of Warcraft classic gear tracker, created to allow a
+                    user to add and display at a glance the gear they want to
+                    collect within WOW classic. Built with Django, Python and
+                    Materialze.
+                  </p>
+                  <a
+                    href="https://wow-gt.herokuapp.com/"
+                    target="blank"
+                    class="card-link"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
             </div>
-            <a
-              href="https://wow-gt.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check it out!</a
-            >
           </div>
         </div>
         <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/cardinal.jpg"
-              class="card-img-top"
-              alt="Picture of a cardinal"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Bird-Flow, group project to search and display birds within a
-                desired area. Designed with React, MongoDB, Express, Node,
-                JavaScript and CSS
-              </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="images/cardinal.jpg"
+                  class="card-img-top"
+                  alt="Picture of a cardinal"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Bird Flow</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    A one for one square by square recreation of level one of
+                    Pacman, built with basic HTML, CSS, and JavaScript.
+                  </p>
+                  <a
+                    href="https://bird-flow.herokuapp.com/"
+                    target="blank"
+                    class="card-link"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
             </div>
-            <a
-              href="https://bird-flow.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check it out!</a
-            >
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col col-sm-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="images/Pacman.png"
+                  class="card-img-top"
+                  alt="Pacman start screen"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Pacman</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    A one for one square by square recreation of level one of
+                    Pacman, built with basic HTML, CSS, and JavaScript.
+                  </p>
+                  <a
+                    href="https://aprin418.github.io/JavaScript-Pacman/"
+                    target="blank"
+                    class="card-link"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/Pacman.png"
-              class="card-img-top"
-              alt="Pacman start screen"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                A one for one square by square recreation of level one of
-                Pacman, built with basic HTML, CSS, and JavaScript.
-              </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="images/War.png"
+                  class="card-img-top"
+                  alt="Pacman start screen"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>War!</h1>
+                <div class="card-body">
+                  <p class="card-text">
+                    Recreation of the classic game of war with a standard 52
+                    card deck.
+                  </p>
+                  <a
+                    href="https://aprin418.github.io/war-cards/"
+                    target="blank"
+                    class="card-link"
+                    >Check it out!</a
+                  >
+                </div>
+              </div>
             </div>
-            <a
-              href="https://aprin418.github.io/JavaScript-Pacman/"
-              target="blank"
-              class="card-link"
-              >Check it out!</a
-            >
-          </div>
-        </div>
-        <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/War.png"
-              class="card-img-top"
-              alt="Pacman start screen"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Recreation of the classic game of war with a standard 52 card
-                deck.
-              </p>
-            </div>
-            <a
-              href="https://aprin418.github.io/war-cards/"
-              target="blank"
-              class="card-link"
-              >Check it out!</a
-            >
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="container-fluid other-div" id="other-div">
-      <h2>Other Projects</h2>
-      <div class="row">
-        <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/bootstrap.png"
-              class="card-img-top"
-              alt="Liquor list site search image"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Liquor-list site. Search site designed to search for cocktails
-                based on your ingredients lying around the house. Designed with
-                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
-              </p>
-            </div>
-            <a
-              href="https://liquor-list.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check out my github page</a
-            >
-          </div>
-        </div>
-        <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/react.png"
-              class="card-img-top"
-              alt="Liquor list site search image"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Liquor-list site. Search site designed to search for cocktails
-                based on your ingredients lying around the house. Designed with
-                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
-              </p>
-            </div>
-            <a
-              href="https://liquor-list.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check out my github page</a
-            >
-          </div>
-        </div>
-        <div class="col col-sm-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="images/LLSearch.png"
-              class="card-img-top"
-              alt="Liquor list site search image"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Liquor-list site. Search site designed to search for cocktails
-                based on your ingredients lying around the house. Designed with
-                Node, Express EJS, SQL, Postgres, Mongoose, JavaScript and CSS
-              </p>
-            </div>
-            <a
-              href="https://liquor-list.herokuapp.com/"
-              target="blank"
-              class="card-link"
-              >Check out my github page</a
-            >
-          </div>
-        </div> -->
-
-    <!-- <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/bootstrap.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Nucamp Site-Boostrap</span
-                >
-                <p>
-                  <a href="https://github.com/aprin418/nucampsite"
-                    >Check it out!</a
-                  >
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Nucamp Site-Boostrap<i class="material-icons right"
-                    >close</i
-                  ></span
-                >
-                <p>Nucamp project, Learning and using bootstrap features.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/react.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Nucamp Site-React</span
-                >
-                <p>
-                  <a href="https://github.com/aprin418/ReactNucamp"
-                    >Check it out!</a
-                  >
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Nucamp Site-React<i class="material-icons right"
-                    >close</i
-                  ></span
-                >
-                <p>Nucamp Site, Explaining the many uses for React.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/react-native.png" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"
-                  >Nucamp Site-React Native</span
-                >
-                <p>
-                  <a href="https://github.com/aprin418/ReactNativeNucamp"
-                    >Check it out!</a
-                  >
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"
-                  >Nucamp Site-React Native<i class="material-icons right"
-                    >close</i
-                  ></span
-                >
-                <p>
-                  Nucamp Site, a project to turn the normal React site into a
-                  React Native Mobile site using Expo-go app.
-                </p>
-              </div>
-            </div>
-          </div> -->
-    <!-- </div>
-    </div> -->
+    <br />
 
     <div class="container-fluid contact-div" id="contact-div">
       <h2>Contact Info</h2>
+      <br />
       <div class="row mb-0">
         <div class="col">
           <a
